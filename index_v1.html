@@ -1,42 +1,217 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tawa College EOTC 2026</title>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="products, information, marketplace, art, clothing">
+		<meta name="Author" content="Jethro B">
+		<meta name="Description" content="Kool Kiwiana Homepage">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-	<meta name="Author" content="Mr Foulds">
-	<meta name="Keywords" content="HTML, CSS, PHP, SQL, JavaScript">
-	<meta name="Description" content="13CSI Music Database">
-	
-	<title>Music Database</title>
-		
-	<link rel="stylesheet" href="css/style.css"/>
-			
-</head>
-
-	<!-- main webpage content starts here -->  
-  <body>
-  
-	<div class="grid-container">
-	
-	<div class="header">Header</div>
-	
-	<div class="sidebar">Sidebar</div>
-	
-	<div class="content">
-		<div class="scroll-area">
-		
-		<h1><center>Login Page</center></h1>
-		
-		<h3>Sub Heading</h3>
-		<hr></hr>
-		<p></p>
+		<?php require_once("resources/kool_kiwiana_mysqli.php"); ?>
+		<link rel="stylesheet" href="css/style_v1.css">
+	</head>
+	<div class="header">
+		<div class="logo">
+			<img src="images/tawa_shield.png">
+			<h1>Tawa College</h1>
+			<h1 class="bold">EOTC 2026</h1>
 		</div>
-    </div>
-	
-	<div class="footer">Footer</div>
-    
+		<div class="links">
+			<a href=""><h1>Home</h1></a>
+			<a href=""><h1>Contact</h1></a>
+		</div>
 	</div>
-	
-  </body>
+	<div class="persistent">
+		<div><img src="images/bars.svg"></div>
+		<a href=""><h2>Rangituhi Walk</h2></a>
+		<a href=""><h2>Camp Wainui</h2></a>
+		<a href=""><h2>Adrenalin Forest & Pool</h2></a>
+		<a href=""><h2>Community Service</h2></a>
+	</div>
+	<div class="activity-menu">
+		<div class="full-width-2">
+			<h1 class="white">Learn more about the 2026 Activities!</h1>
+		</div>
+		<a href=""><h2>Adrenalin Forest & Pool</h2></a>
+		<a href=""><h2>Rangituhi Walk</h2></a>
+		<a href=""><h2>Community Service</h2></a>
+		<a href=""><h2>Camp Wainui</h2></a>
+	</div>
+	<div class="content">
+		<div class="full-width-2">
+			<h2 class="white">All students must have their permission form signed in order to participate.</h2>
+			<h2 class="white">An all-inclusive fee of $90 per student is payable to the school office or bank account.</h2>
+		</div>
+		<div class="floating">
+			<a href=""><h2 class="white">Payment Information</h2></a>
+			<a href=""><h2 class="white">Packing Lists</h2></a>
+			<a href=""><h2 class="white">Activity Timetables</h2></a>
+		</div>
+		<div class="text-area">
+			<p>In the Year 10 EOTC Programme, students partake in 4 action-packed days with various activities. The focus of this programme is about citizenship & social awareness of the students.</p>
+			<p>EOTC takes place from Tuesday 3 December to Friday 6 December.
+All activities commence at Tawa College past 8AM and return to school grounds by 3:20PM. Starting times vary by activity - see the activity pages.</p>
+			<p>For each of the activity days, students must bring:</p>
+			<p class="list">• Packed lunch & water to drink</p>
+			<p class="list">• Footwear & clothing suitable for movement</p>
+			<p class="list">• Any medicines required for consumption</p>
+			<p class="list">• Jumper or rain jacket, subject to the weather</p>
+			<p class="list">• A good attitude!</p>
+			<p>These requirements will vary by activity. Specific packing lists can be found at the top of each activity page, and a full packing list can be found at the bottom of this page. If there are any difficulties supplying these required items, please contact us so we can discuss a suitable solution.</p>
+		</div>
+		<div class="image">
+			<img src="images/blank.jpg">
+		</div>
+		<div class="full-width-2">
+			<h1 class="white">Activity Timetables (House Groups)</h1>
+		</div>
+		<div class="timetables">
+			<div id="rangituhi">
+				<p>Rangituhi</p>
+				<div class="sequence">
+					<div>
+						<p>4 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Rangituhi Walk</p>
+					</div>
+					<div>
+						<p>5 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Community Service</p>
+					</div>
+					<div>
+						<p>6 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Camp Wainui (Day 1)</p>
+					</div>
+					<div>
+						<p>7 December</p>
+						<p>Camp Wainui (Day 2)</p>
+					</div>
+				</div>
+			</div>
+			<div id="whitireia">
+				<p>Whitireia</p>
+				<div class="sequence">
+					<div>
+						<p>4 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Rangituhi Walk</p>
+					</div>
+					<div>
+						<p>5 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Community Service</p>
+					</div>
+					<div>
+						<p>6 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Camp Wainui (Day 1)</p>
+					</div>
+					<div>
+						<p>7 December</p>
+						<p>Camp Wainui (Day 2)</p>
+					</div>
+				</div>
+			</div>
+			<div id="raukawa">
+				<p>Raukawa</p>
+				<div class="sequence">
+					<div>
+						<p>4 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Rangituhi Walk</p>
+					</div>
+					<div>
+						<p>5 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Community Service</p>
+					</div>
+					<div>
+						<p>6 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Camp Wainui (Day 1)</p>
+					</div>
+					<div>
+						<p>7 December</p>
+						<p>Camp Wainui (Day 2)</p>
+					</div>
+				</div>
+			</div>
+			<div id="parirua">
+				<p>Parirua</p>
+				<div class="sequence">
+					<div>
+						<p>4 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Rangituhi Walk</p>
+					</div>
+					<div>
+						<p>5 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Community Service</p>
+					</div>
+					<div>
+						<p>6 December</p>
+						<p>8:30am @ Mauri Tau</p>
+						<p>Camp Wainui (Day 1)</p>
+					</div>
+					<div>
+						<p>7 December</p>
+						<p>Camp Wainui (Day 2)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-area">
+			<h2>Additional Items to Pack</h2>
+			<p class="underline">For each of the activity days, students must bring:</p>
+			<p class="list">• Packed lunch & water to drink</p>
+			<p class="list">• Footwear & clothing suitable for movement</p>
+			<p class="list">• Any medicines required for consumption</p>
+			<p class="list">• Jumper or rain jacket, subject to the weather</p>
+			<p class="list">• A good attitude!</p>
+			<p class="underline">For Camp Wainui and Adrenalin Forest & Pool:</p>
+			<p class="list">• Swimming gear (togs, towel, goggles, wet bag, etc.)</p>
+			<p class="underline">The trip to Camp Wainui lasts 2 days and involves several more activities, which require additional items to be brought:</p>
+			<p class="list">• Two changes of clothes, for overnight & the second day.</p>
+			<p class="list">• Snacks & games for overnight entertainment</p>
+			<p class="list">• Sleeping bag</p>
+			<p class="list">• A day pack containing extra water & snacks for the Orongorongo River Walk</p>
+			<p>Students will be sleeping in tents with their friends at Camp Wainui.</p>
+			<p>If your family can provide a tent, please let their Mauri Tau teacher know.</p>
+			
+			<h2>Payment Information</h2>
+			<p>There is a $90 fee for participating in the EOTC Programme. This is all-inclusive of transport, private hiring of venues, et cetera. It can be paid to the school bank account (12-XXXXXX-XXXXX-XX) or in person at the school office.</p>
+			<p>If you may have any difficulties with this payment, don’t hesitate to reach out so that we can figure out a solution that fits your needs.</p>
+			
+			<h2>General Reminders</h2>
+			<p>Individual safety is paramount during the EOTC Programme. Teachers will accompany & supervise students during the activities. Students are required to act in a manner that does not endanger themselves or others. Violation of these guidelines will result in the removal of the student from the activity, and they will be sent home at the expense of their parents or caregivers.</p>
+			<p>On all of the trips, students must abide by the school rules. This includes absolutely no cigarettes, vapes, drugs, or alcohol to be consumed or brought. Anyone found non-compliant will be removed from the activity and sent home at the expense of their parents/caregivers.</p>
+		</div>
+		<div class="gallery">
+			<img src="images/blank.jpg">
+			<img src="images/blank.jpg">
+			<img src="images/blank.jpg">
+		</div>
+	</div>
+	<p></p>
+	<div class="footer">
+		<div class="attribution">
+			<img src="images/blank.jpg">
+			<div class="f-left">
+				<h3 class="regular">This website contains material produced by others which requires attribution.</h3>
+				<h3><a href="">Click here</a> to view the attributions.</h3>
+			</div>
+		</div>
+		<div class="f-left">
+			<h3>© 2026 Tawa College • All Rights Reserved</h3>
+			<h3 class="regular">Website by Jethro Betita</h3>
+		</div>
+		<div class="f-right">
+			<h3 class="regular">Placeholder Text</h3>
+			<h3>Placeholder text</h3>
+		</div>
+	</div>
 </html>
