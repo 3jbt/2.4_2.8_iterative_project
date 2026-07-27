@@ -8,8 +8,7 @@
 		<meta name="Description" content="Kool Kiwiana Homepage">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-		<?php require_once("resources/kool_kiwiana_mysqli.php"); ?>
-		<link rel="stylesheet" href="css/style_v2.css">
+		<link rel="stylesheet" href="css/style_v1.css">
 		
 	</head>
 	<div class="header">
@@ -19,40 +18,47 @@
 			<h1 class="bold">EOTC 2026</h1>
 		</div>
 		<div class="links">
-			<a href=""><h1>Home</h1></a>
-			<a href=""><h1>Contact</h1></a>
+			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/index_v1.html" id="current"><h1 id="bold">Home</h1></a>
+			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/contact_v1.html"><h1>Contact</h1></a>
 		</div>
 	</div>
-	<div class="persistent">
-		<div id="toggle">
-			<img src="images/bars.svg" onclick="menutoggle()" id="Change">
+	<div class="persistent" id="persistent">
+		<div id="toggle" class="" onclick="menutoggle()">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
-		<a href=""><h2>Rangituhi Walk</h2></a>
-		<a href=""><h2>Camp Wainui</h2></a>
-		<a href=""><h2>Adrenalin Forest & Pool</h2></a>
-		<a href=""><h2>Community Service</h2></a>
+		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page2_v1.html"><h2>Rangituhi Walk</h2></a>
+		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page3_v1.html"><h2>Camp Wainui</h2></a>
+		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page1_v1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page4_v1.html"><h2>Community Service</h2></a>
 	</div>
 	<div class="activity-menu">
 		<div class="full-width-2">
 			<h1 class="white">Learn more about the 2026 Activities!</h1>
 		</div>
-		<a href=""><h2>Adrenalin Forest & Pool</h2></a>
-		<a href=""><h2>Rangituhi Walk</h2></a>
-		<a href=""><h2>Community Service</h2></a>
-		<a href=""><h2>Camp Wainui</h2></a>
+		<a id="adrenalin" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page1_v1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a id="mountainw" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page2_v1.html"><h2>Rangituhi Walk</h2></a>
+		<a id="community" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page4_v1.html"><h2>Community Service</h2></a>
+		<a id="campwainu" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page3_v1.html"><h2>Camp Wainui</h2></a>
 	</div>
-	<div class="activity-menu" id="menu" onclick="menutoggle()">
-		<div class="full-width-2">
-			<h1 class="white">Learn more about the 2026 Activities!</h1>
+	<div class="activity-menu" id="menu" style="top: -1000px; position: fixed;">
+		<div class="full-width-2" id="banner">
+			<h1 class="white" id="main">Tawa College <b>EOTC 2026</b></h1>
+			<div class="links">
+				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/index_v1.html" id="no-image"><h1 id="bold">Home</h1></a>
+				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/contact_v1.html" id="no-image"><h1>Contact</h1></a>
+			</div>
 		</div>
-		<a href=""><h2>Adrenalin Forest & Pool</h2></a>
-		<a href=""><h2>Rangituhi Walk</h2></a>
-		<a href=""><h2>Community Service</h2></a>
-		<a href=""><h2>Camp Wainui</h2></a>
+		<a id="adrenalin" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page1_v1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a id="mountainw" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page2_v1.html"><h2>Rangituhi Walk</h2></a>
+		<a id="community" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page4_v1.html"><h2>Community Service</h2></a>
+		<a id="campwainu" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page3_v1.html"><h2>Camp Wainui</h2></a>
 	</div>
 	<div id="obscure">
 	</div>
-	<div class="content" id="test">
+	<div class="content">
 		<div class="full-width-2" id="important">
 			<h2 class="white" id="bold">All students must have their <a href="">permission form ⇗</a> signed & completed in order to participate.</h2>
 			<h2 class="white">An all-inclusive fee of $90 per student is payable to the school office or bank account.</h2>
@@ -67,7 +73,7 @@
 				<p>In the Year 10 EOTC Programme, students partake in 4 action-packed days with various activities. The focus of this programme is about citizenship & social awareness of the students.</p>
 				<p>EOTC takes place from Tuesday 3 December to Friday 6 December.
 	All activities commence at Tawa College past 8AM and return to school grounds by 3:20PM. Starting times vary by activity - see the activity pages.</p>
-				<p>For each of the activity days, students must bring:</p>
+				<h2>For each of the activity days, students must bring:</h2>
 				<p class="list">• Packed lunch & water to drink</p>
 				<p class="list">• Footwear & clothing suitable for movement</p>
 				<p class="list">• Any medicines required for consumption</p>
@@ -224,18 +230,19 @@
 		</div>
 	</div>
 	<p></p>
-	<button onclick="topFunction()" id="myBtn" title="Return to top"><p>Back to Top</p></button>
-	<script type="text/javascript" src="js/script_v2.js"></script>
+	<button onclick="topFunction()" id="myBtn" title="Return to top"><img src="images/blank.jpg" id="arrow"><p>Back to Top</p></button>
+	<script type="text/javascript" src="js/script_v1.js"></script>
 	<div class="footer">
 		<div class="attribution">
-			<img src="images/blank.jpg">
+			<img src="images/blank.jpg" id="cc">
 			<div class="f-left">
 				<h3 class="regular">This website contains material produced by others which requires attribution.</h3>
-				<h3><a href="">Click here</a> to view the attributions.</h3>
+				<h3><a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_2_colours_and_fonts/page6_v1.html" id="credits">Click here ⇗</a> to view the attributions.</h3>
 			</div>
+			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/blank.jpg" id="arrow"><p>Back to Top</p></button>
 		</div>
 		<div class="f-left">
-			<h3>© 2026 Tawa College • All Rights Reserved</h3>
+			<h3><b>© 2026 Tawa College</b> • All Rights Reserved</h3>
 			<h3 class="regular">Website by Jethro Betita</h3>
 		</div>
 		<div class="f-right">
