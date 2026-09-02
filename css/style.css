@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
+	/* Colour Palette */
 	--primary: #0000a3;
 	--secondary: #cdcdf2;
 	--tertiary: lavender;
 	--contrast: #fbca01;
+	
 	--text: #000000;
 	--text_contrast: #ffffff;
 	--white: #ffffff;
@@ -15,9 +17,18 @@
 	--whitireia: #caa300;
 	--raukawa: #a30000;
 	--parirua: #0000a3;
-	--width: 12vw;
-	--square3: 3vw;
+	
+	/* Underlines */
+	--black_underline: 2px solid var(--text) underline;
+	--white_underline: 2px solid var(--text_contrast) underline;
 }
+
+html {
+	/* Prevent special browsers from scrolling past the beginning/end of the pages */
+	overscroll-behavior: none;
+}
+
+/* Text Styling */
 
 h1, h2, h3, p, li {
 	font-family: "Libre Franklin";
@@ -25,37 +36,21 @@ h1, h2, h3, p, li {
 	font-weight: normal;
 }
 
-.white {
-	color: var(--text_contrast);
+h1 {
+	font-size: 2.2vw;
 }
 
-.bold, #bold {
+.current h1 {
 	font-weight: bold;
 }
 
-.center {
+.full-width-2 h1 {
+	color: var(--text_contrast);
+}
+
+.activity-menu h1, .activity-menu h2 {
 	text-align: center;
-	line-height: 0;
-}
-
-.underline {
-	text-decoration: 2px solid var(--text) underline;
-	font-weight: 550;
-}
-
-.underegular {
-	text-decoration: 2px solid var(--white) underline;
-	font-weight: 400;
-}	
-
-a {
-	text-align: center;
-	transition-duration: 0.2s;
-	text-decoration: none;
-}
-
-h1 {
-	font-size: 2.2vw;
+	color: var(--text_contrast);
 }
 
 h2 {
@@ -64,49 +59,25 @@ h2 {
 
 h2 a {
 	color: var(--contrast);
-	text-decoration: 3px solid underline var(--contrast);
+	text-decoration: var(--white_underline);
 }
 
-h3 {
-	font-size: 1.1vw;
-}
-
-.text-area h2 {
-	font-weight: bold;
-}
-
-.timetables div h2 {
+.dates div h2 {
 	color: var(--text_contrast);
-}
-
-p, li {
-	font-size: 1.3vw;
-}
-
-.footer h3 {
-	line-height: 0;
-}
-
-#credits {
-	color: var(--text);
-	text-decoration: 2px solid underline var(--text);
-}
-
-.list {
-	line-height: 50%;
+	font-weight: bold;
+	text-align: center;
 }
 
 .persistent h2 {
-	text-decoration: underline 3px solid var(--text);
+	text-decoration: var(--black_underline);
 	color: var(--text);
 	line-height: 100%;
 	transition-duration: 200ms;
 }
 
-.text-contrast, .header h1, .header h2, .footer h3 {
+.persistent a:hover h2 {
 	color: var(--text_contrast);
-	position: relative;
-	z-index: 4;
+	text-decoration: 2px solid underline var(--text_contrast);
 }
 
 .dropdown h2 {
@@ -117,6 +88,106 @@ p, li {
 	line-height: 40%;
 }
 
+.activity-menu h2 {
+	line-height: 200%;
+	font-weight: bold;
+	font-size: 2.4vw;
+	-webkit-text-stroke: 0.1vw var(--primary);
+}
+
+.timetables h2 {
+	color: var(--text_contrast);
+	font-weight: bold;
+}
+
+.text-area h2 {
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.1vw;
+}
+
+.attribution .f-left h3 {
+	color: var(--text);
+}
+
+.footer h3 {
+	line-height: 0;
+}
+
+/* Text Styling Rules */
+
+.white {
+	color: var(--text_contrast);
+}
+
+.bold, #bold {
+	font-weight: bold;
+}
+
+.full-width-2 a {
+	text-decoration: 2px solid underline var(--text_contrast);
+}
+
+p a, li a {
+	color: var(--text);
+	text-decoration: 2px dotted underline var(--text);
+}
+
+.text-contrast, .header h1, .header h2, .footer h3 {
+	color: var(--text_contrast);
+	position: relative;
+	z-index: 4;
+}
+
+.center {
+	text-align: center;
+	line-height: 0;
+}
+
+.regular {
+	font-weight: 400 !important;
+}
+
+.underline {
+	text-decoration: var(--black_underline);
+	font-weight: 550;
+}
+
+.underegular {
+	text-decoration: var(--white_underline);
+	font-weight: 400;
+}	
+
+a {
+	text-align: center;
+	transition-duration: 0.2s;
+	text-decoration: none;
+}
+
+p, li {
+	font-size: 1.3vw;
+}
+
+.sequence u {
+	text-decoration: var(--black_underline);
+	font-weight: 550;
+}
+
+.alt {
+	font-weight: 400 !important;
+}
+
+#credits {
+	color: var(--text);
+	text-decoration: var(--black_underline);
+}
+
+.list {
+	line-height: 50%;
+}
+
 #high_contrast {
 	text-decoration: 3px var(--contrast) solid underline;
 }
@@ -124,22 +195,41 @@ p, li {
 .links a {
 	border-radius: 8px;
 	padding: 2%;
-	text-decoration: 3px var(--text_contrast) solid underline;
+	text-decoration: var(--white_underline);
 }
 
-a:hover, #current {
+a:hover, .current {
 	background-color: var(--hover);
 }
 
-.persistent #current * {
-	color: var(--text_contrast);
-	text-decoration: 3px var(--text_contrast) solid underline;
+.sequence div p {
+	line-height: 30%;
 }
 
-.header .underline, .links .regular {
-	text-decoration: underline 3px solid var(--text_contrast);
-}	
+.persistent .current * {
+	color: var(--text_contrast);
+	text-decoration: var(--white_underline);
+	font-weight: bold;
+}
 
+/* White underlines for text against dark backgrounds */
+.header .underline, .links .regular {
+	text-decoration: var(--white_underline);
+}
+
+/* Image Subtitles */
+.BL {
+	position: absolute;
+	bottom: -1.3vw;
+	left: -1%;
+	color: var(--text_contrast);
+	background-color: var(--primary);
+	line-height: 0;
+	padding: 6%;
+	border-radius: 0px 10px 0px 0px;
+}
+
+/* Page Elements */
 .header {
 	background-color: var(--primary);
 	position: relative;
@@ -150,6 +240,7 @@ a:hover, #current {
 	padding-bottom: 2%;
 }
 
+/* Sticky Navbar */
 .persistent {
 	background-color: var(--secondary);
 	grid-column-start: 1;
@@ -174,7 +265,7 @@ a:hover, #current {
 .persistent a {
 	flex-basis: 25%;
 	transition-duration: 200ms;
-
+	padding: 0.75% 0% 0.75% 0%;
 }
 
 body {
@@ -216,6 +307,10 @@ body {
     justify-content: center;
 }
 
+#banner .links {
+	width: 30%;
+}
+
 .activity-menu {
 	display: grid;
 	grid-template-rows: auto auto auto;
@@ -230,6 +325,7 @@ body {
 	position: relative;
 }
 
+/* Generic div element */
 .full-width-2 {
 	grid-column-start: 1;
 	grid-column-end: span 2;
@@ -240,35 +336,8 @@ body {
 	border-radius: 16px;
 }
 
-.activity-menu h1, .activity-menu h2 {
-	text-align: center;
-	color: var(--text_contrast);
-}
-
-.activity-menu h2 {
-	line-height: 200%;
-	font-weight: bold;
-	font-size: 2.4vw;
-	-webkit-text-stroke: 0.1vw var(--primary);
-}
-
-#adrenalin {
-	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/blank.jpg");
-}
-
-#mountainw {
-	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/blank.jpg");
-}
-
-#community {
-	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/blank.jpg");
-}
-
-#campwainu {
-	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/20241205_192001.jpg");
-}
-
-#mountainw, #adrenalin, #community, #campwainu {
+/* Links to other pages with background images */
+.mountainw, .adrenalin, .community, .campwainu {
 	border: 4px solid var(--primary);
 	border-radius: 16px;
 	background-size: cover;
@@ -277,7 +346,7 @@ body {
 	transition-timing-function: ease-in-out;
 }
 
-#mountainw:hover, #adrenalin:hover, #community:hover, #campwainu:hover {
+.mountainw:hover, .adrenalin:hover, .community:hover, .campwainu:hover {
 	transform: scale(1.05, 1.05);
 	border: 6px solid var(--hover);
 }
@@ -286,13 +355,14 @@ body {
 	background-color: var(--primary);
 	border: 4px solid var(--primary);
 	border-radius: 16px;
-	text-decoration: 3px solid var(--text_contrast) underline;
+	text-decoration: var(--white_underline);
 }
 
 .floating a:hover {
 	background-color: var(--hover);
 }
 
+/* Main container */
 .content {
 	display: flex;
 	flex-direction: column;
@@ -345,7 +415,31 @@ body {
 	width: 30%;
 }
 
+.gallery img {
+	height: 100%;
+}
+
+.gallery .full-width-2 {
+	display: flex;
+	overflow: hidden;
+}
+
+.image {
+	position: relative;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	border-radius: 16px;
+	border: 4px solid var(--primary);
+	height: calc(0.8vw*1.9);
+}
+
 #width_auto {
+	width: auto;
+}
+
+#flex-vertical .gallery {
 	width: auto;
 }
 
@@ -363,6 +457,7 @@ body {
 	border-radius: 16px;	
 }
 
+/* House Colours for Timetables & Dates*/
 #rangituhi {
 	border: 4px solid var(--rangituhi);
 	background-color: var(--rangituhi);
@@ -388,20 +483,10 @@ body {
 	background-color: var(--tertiary);
 	padding: 0;
 	padding-bottom: 1%;
-	border-radius: 0px 0px 16px 16px;
 	
 	display: flex;
 	flex-direction: column;
 	gap: 2%;
-}
-
-.sequence div p {
-	line-height: 30%;
-}
-
-.timetables h2 {
-	color: var(--text-contrast);
-	font-weight: bold;
 }
 
 .footer {
@@ -426,7 +511,7 @@ body {
 	padding: 0.5%;
 	display: grid;
 	grid-template-rows: auto;
-	grid-template-columns: 5% auto auto var(--width);
+	grid-template-columns: 5% auto auto 6%;
 }
 
 .footer .f-left {
@@ -442,24 +527,14 @@ body {
 	margin: auto 0;
 }
 
-.attribution .f-left h3 {
-	color: var(--text);
-}
-
 .f-right {
 	grid-column-start: 3;
 	grid-column-end: span 1;
 	padding-right: 4%;
 }
 
-.gallery img {
-	height: 100%;
-}
-
-#myBtn {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
+/* Button Styling*/
+button {
 	background-color: var(--tertiary);
 	color: var(--text);
 	cursor: pointer;
@@ -467,9 +542,6 @@ body {
 	border: 4px solid var(--primary);
 	padding: 0.5vw;
 	transition-duration: 200ms;
-	z-index: 2;
-	opacity: 0;
-	width: var(--width);
 	
 	display: flex;
 	flex-direction: row;
@@ -477,34 +549,28 @@ body {
 	gap: 2%;
 }
 
+#following_button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 3;
+	opacity: 0;
+}
+
 #stayBtn {
 	grid-column-start: 4;
 	grid-column-end: span 1;
-	width: var(--width);
-	
-	background-color: var(--tertiary);
-	color: var(--text);
-	cursor: pointer;
-	border-radius: 16px;
-	border: 4px solid var(--primary);
-	padding: 0.5vw;
-	transition-duration: 200ms;
-	
-	display: flex;
-	flex-direction: row;
-	gap: 2%;
 }
 
-#arrow {
-	width: 2vw;
-	height: 2vw;
+button img {
+	width: 4vw;
+	height: 4vw;
 	margin: auto 0;
 }
 
-#myBtn:hover, #stayBtn:hover {
+#following_button:hover, #stayBtn:hover {
 	background-color: var(--hover);
 }
-
 
 #obscure {
 	display: none;
@@ -545,10 +611,6 @@ body {
 	background-size: cover;
 }
 
-.full-width-2 h1 {
-	color: var(--text_contrast);
-}
-
 .dates {
 	grid-row-start: 3;
 	grid-row-end: span 1;
@@ -561,17 +623,12 @@ body {
 }
 
 .dates div {
-	background-color: var(--contrast);
+	background-color: var(--primary);
 	border-radius: 16px;
 	flex-grow: 1;
 	overflow: hidden;
-	border: none;
-}
-
-.dates div h2 {
-	color: var(--text_contrast);
-	font-weight: bold;
-	text-align: center;
+	border: none !important;
+	position: relative;
 }
 
 #contact {
@@ -580,18 +637,17 @@ body {
 	padding-bottom: 3%;
 }
 
-#contact_grid *, .gallery .full-width-2 {
+#flex-vertical .flex-horizontal *, .gallery .full-width-2 {
 	text-align: left;
 	margin: auto 0;
 	color: var(--text_contrast);
 	flex-basis: auto;
 }
 
-#contact_grid .gallery img {
+#flex-vertical .gallery img {
 	height: 6vw;
 	width: 6vw;
 	border: none;
-	color: green;
 }
 
 .margin {
@@ -608,7 +664,7 @@ body {
 	margin: 0 -5px;
 }
 
-#contact_grid {
+#flex-vertical .flex-horizontal {
 	padding: 1% 1% 1% 1%;
 }
 
@@ -624,8 +680,10 @@ body {
 	width: 4.2vw;
 	height: 4.2vw;
 	margin: auto 0;
+	padding-left: 3%;
 }
 
+/* Animated Hamburger Menu*/
 #toggle * {
 	margin: 0;
 	padding: 0;
@@ -644,8 +702,9 @@ body {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-	margin: 0.78%;
+	margin: 1.3%;
 }
+
 #toggle span {
     display: block;
     position: absolute;
@@ -713,11 +772,6 @@ body {
 	margin: auto 0;
 }
 
-#links img {
-	width: var(--square3);
-	height: var(--square3);
-}
-
 #blinks {
 	width: 30%;
 }
@@ -731,38 +785,6 @@ body {
 #shield {
 	width: 5vw;
 	margin-right: 0.5%;
-}
-
-.gallery .full-width-2 {
-	display: flex;
-	overflow: hidden;
-}
-
-p a, li a {
-	color: var(--text);
-	text-decoration: 2px dotted underline var(--text);
-}
-
-.BL {
-	position: absolute;
-	bottom: -5px;
-	left: 3%;
-	color: var(--text_contrast);
-	background-color: var(--primary);
-	line-height: 0;
-	padding: 4%;
-	border-radius: 10px;
-}
-
-.image {
-	position: relative;
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
-	overflow: hidden;
-	border-radius: 16px;
-	border: 4px solid var(--primary);
-	height: calc(0.8vw*1.9);
 }
 
 .f-right {
@@ -785,6 +807,7 @@ p a, li a {
 	display: none;
 }
 
+/* Responsive Design */
 @media (orientation: portrait) {
 	.mobile_image {
 		display: block;
@@ -818,7 +841,7 @@ p a, li a {
 		row-gap: 2vw;
 	}
 	
-	#mountainw, #adrenalin, #community, #campwainu {
+	.mountainw, .adrenalin, .community, .campwainu {
 		border: 0.6vw solid var(--primary);
 	}
 	
@@ -848,13 +871,21 @@ p a, li a {
 		font-size: 2.6vh;
 	}
 
-	h2, h3 {
-		font-size: 2vh;
+	h2 {
+		font-size: 2.4vh;
 	}
 	
 	.dates h2 {
 		font-size: 1.5vh;
 		font-weight: normal;
+	}
+	
+	.timetables h2 {
+		font-size: 2.5vh;
+	}
+	
+	h3 {
+		font-size: 2vh;
 	}
 	
 	#toggle {
@@ -865,7 +896,7 @@ p a, li a {
 		text-decoration: 0.75px solid underline var(--text);
 	}
 	
-	.gallery .image, .persistent a, #stayBtn, #cc, #shield, .f-left .regular, #myBtn img, .activity-menu::before {
+	.gallery .image, .persistent a, #stayBtn, #cc, #shield, .f-left .regular, #myBtn img, .activity-menu::before, button, #flex-vertical .gallery img {
 		display: none;
 	}
 
@@ -956,7 +987,7 @@ p a, li a {
 		padding: 2%;
 	}
 	
-	#more-spacing {
+	#icons_credits p {
 		padding: 2%;
 	}
 	
@@ -979,6 +1010,11 @@ p a, li a {
 	#high_contrast {
 		text-decoration: 1.2px solid var(--contrast) underline;
 	}
+	
+	.BL {
+		border-radius: 16px;
+		padding: 2%;
+	}
 }
 
 #insufficient {
@@ -992,6 +1028,11 @@ p a, li a {
 	padding: 5%;
 }
 
+#insufficient img {
+	width: 10%;
+}
+
+/* Small Screen Exceptions */
 @media only screen and (max-width: 380px) {
 	#insufficient {
 		display: block;
@@ -1002,6 +1043,7 @@ p a, li a {
 	}
 }
 
+/* Koru Patterns */
 .header *, .footer *, .full-width-2 *, .dates div * {
 	z-index: 2;
 	position: relative;
@@ -1061,37 +1103,25 @@ p a, li a {
 	position: relative;
 }
 
-.full-width-2 a {
-	text-decoration: 2px solid underline var(--text_contrast);
-}
-
-.dates div {
-	position: relative;
-	border: none;
-}
-
-.dates #rangituhi, .dates #raukawa, .dates #parirua, .dates #whitireia {
-	border: none;
-}
-
-#camp-wainui-jpg, #campwainu {
+/* Thumbnail & Activity Link Images */
+#camp-wainui-jpg, .campwainu {
 	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/activities/wainui_lake.jpg");
 }
 
-#forest-pool-jpg, #adrenalin {
+#forest-pool-jpg, .adrenalin {
 	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/activities/forest_3.jpg");
 }
 
-#rangituhi-walk-jpg, #mountainw {
+#rangituhi-walk-jpg, .mountainw {
 	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/activities/rangituhi_1.jpg");
 	background-position: top;
 }
 
-#community-service-jpg, #community {
+#community-service-jpg, .community {
 	background-image: url("https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/images/activities/community_1.jpg");
 }
 
-#zoom_150 {
+#zoom_150, .zoom_150 {
 	height: 150%;
 }
 
@@ -1100,15 +1130,11 @@ p a, li a {
 		width: 90vh;
 	}
 	
-	.header::before, .full-width-2::before, .gallery .full-width-2::before {
-		width: 300%;
+	.header::before, .full-width-2::before, .gallery .full-width-2::before, .footer::before {
+		width: 250%;
 	}
 	
-	.header {
-		overflow: clip;
-	}
-	
-	.full-width-2 {
+	.header, .full-width-2 {
 		overflow: clip;
 	}
 	
@@ -1122,13 +1148,4 @@ p a, li a {
 		height: auto;
 		margin-right: 1%;
 	}
-	
-	.gallery img {
-		display: none;
-	}
-}
-
-.persistent a:hover h2 {
-	color: var(--text_contrast);
-	text-decoration: 2px solid underline var(--text_contrast);
 }

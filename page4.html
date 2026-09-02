@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
+		<!-- Metadata of the Website for Search Engines -->
 		<title>Tawa College EOTC 2026</title>
 		<meta charset="utf-8">
 		<meta name="Keywords" content="activities, information, tawa college, 2026, eotc">
 		<meta name="Author" content="Jethro B">
 		<meta name="Description" content="Tawa College EOTC 2026">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
+		<!-- Favicon Code so site is distinguishable amongst other tabs -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
 		<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
@@ -21,34 +23,37 @@
 			<img src="images/tawa_shield.png" alt="Tawa College Shield">
 			<div class="wrap">
 				<h1>Tawa College</h1>
-				<h1 class="bold">EOTC 2026</h1>
+				<h1><b>EOTC 2026</b></h1>
 			</div>
 		</div>
 		<div class="links">
-			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/index.html"><h1>Home</h1></a>
-			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/contact.html"><h1>Contact</h1></a>
+			<a href="index.html"><h1>Home</h1></a>
+			<a href="page5.html"><h1>Contact</h1></a>
 		</div>
 	</div>
+	<!-- Sticky Navbar -->
 	<div class="persistent" id="persistent">
-		<div id="toggle" class="" onclick="menutoggle()">
+		<div id="toggle" onclick="menutoggle()">
 			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html" id="current"><h2 id="bold">Community Service</h2></a>
+		<a href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a href="page3.html"><h2>Camp Wainui</h2></a>
+		<a href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a href="page4.html" class="current"><h2>Community Service</h2></a>
 	</div>
+	<!-- Overlay which displays if a screen is too small for content to display reasonably -->
 	<div id="insufficient">
-		<img src="https://projectspace.nz/kyustlyz/12DIT/KCC/images/file-circle-xmark-solid.png" width=10% alt="Cannot display page.">
+		<img src="images/file-circle-xmark-solid.png" alt="Cannot display page.">
 		<p>This screen is too small to display this website.</p>
 		<p>Please switch to landscape view, or a capable device.</p>
 		<p>Free to use computers are available at libraries near you.</p>
 		<p><a href="https://www.google.com/maps/search/library/">Find a library.</a> (Google Maps)</p>
 		<p onclick="history.back()" id="underline">&#9166; Back</p>
 	</div>
+	<!-- Dropdown menu triggered by hamburger menu icon in the navbar -->
 	<div class="activity-menu" id="menu" style="top: -1000px; position: fixed;">
 		<div class="full-width-2" id="banner">
 			<img src="images/tawa_shield.png" id="shield" alt="Tawa College Shield">
@@ -56,31 +61,34 @@
 				<h1 class="white" id="main">Tawa College</h1>
 				<h1 class="bold">EOTC 2026</h1>
 			</div>
-			<div class="links" id="blinks">
-				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/index.html" id="no-image"><h1>Home</h1></a>
-				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/contact.html" id="no-image"><h1>Contact</h1></a>
+			<div class="links">
+				<a href="index.html"><h1>Home</h1></a>
+				<a href="page5.html"><h1>Contact</h1></a>
 			</div>
 		</div>
-		<a id="adrenalin" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a id="mountainw" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a id="community" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html"><h2>Community Service</h2></a>
-		<a id="campwainu" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
+		<a class="adrenalin" href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a class="mountainw" href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a class="community" href="page4.html"><h2>Community Service</h2></a>
+		<a class="campwainu" href="page3.html"><h2>Camp Wainui</h2></a>
 	</div>
+	<!-- Partially transparent overlay when the dropdown menu is opened.
+	This prevents the user from interacting with other page elements while it is open-->
 	<div id="obscure">
 	</div>
+	<!-- Main page content -->
 	<div class="thumbnail" id="community-service-jpg">
 		<div class="full-width-2">
 			<h1 class="bold">Community Service</h1>
 		</div>
 		<div class="dates">
-			<div id="parirua"><h2>DATE BY HOUSE:</h2></div>
-			<div id="rangituhi"><h2>9 DEC</h2></div>
-			<div id="whitireia"><h2>10 DEC</h2></div>
-			<div id="raukawa"><h2>11 DEC</h2></div>
-			<div id="parirua"><h2>12 DEC</h2></div>
+			<div><h2 class="regular">DATE BY HOUSE:</h2></div>
+			<div id="rangituhi"><h2>11 DEC</h2></div>
+			<div id="whitireia"><h2>11 DEC</h2></div>
+			<div id="raukawa"><h2>9 DEC</h2></div>
+			<div id="parirua"><h2>9 DEC</h2></div>
 		</div>
 	</div>
-	<div class="content" id="">
+	<div class="content">
 		<div class="flex-horizontal">
 			<div class="text-area">
 				<p>Students will complete one day of community service assisting local residents and businesses. This will usually occur within walking distance of Tawa College for all Year 10 students.</p>
@@ -99,43 +107,45 @@
 				<p>Students will spend a day completing community service in a small group with friends in the Tawa basin, supervised by a staff member. This is a highly valuable experience where students have the chance to interact with the elderly helping them with gardening, painting etc or assisting local food banks, kindergartens, hospice shops and charities for the day.</p>
 				<p>Students will usually walk to their allocated job with a staff member, however a very small number of jobs will be on the fringes of the Tawa Basin and therefore they may be driven by a staff member in their groups.</p>
 				<div class="mobile_image">
-					<img src="images/activities/community_2.jpg" id="zoom_150" alt="Image of someone washing windows.">
+					<img src="images/activities/community_2.jpg" class="zoom_150" alt="Image of someone washing windows.">
 					<p class="BL">Washing windows</p>
 				</div>
 				<p>At around 3PM, students will return to school in the same manner as that which they arrived in.</p>
-				<p>If you have specific requirements regarding the job that your child will be assigned, <a href="contact.html">contact the EOTC Co-Ordinator</a> ASAP.</p>
+				<p>If you have specific requirements regarding the job that your child will be assigned, <a href="page5.html">contact the EOTC Co-Ordinator</a> ASAP.</p>
 			</div>
 			<div class="gallery">
 				<div class="full-width-2">
 					<p class="underegular">Day Starts:</p>
-					<p><b>8:30am @ School Gyms</b></p>
+					<p><b>8:30am</b> @ School Gyms</p>
 				</div>
 				<div class="full-width-2">
 					<p class="underegular">Day Ends:</p>
-					<p><b>Approximately 2:45pm</b></p>
+					<p>Approximately <b>2:45pm</b></p>
 				</div>
 				<div class="full-width-2" id="red">
 					<p class="margin">Please bring any required medications.</p>
 				</div>
 				<div class="image">
-					<img src="images/activities/community_2.jpg" id="zoom_150" alt="Image of someone washing windows.">
+					<img src="images/activities/community_2.jpg" class="zoom_150" alt="Image of someone washing windows.">
 					<p class="BL">Washing windows</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<button onclick="topFunction()" id="myBtn" title="Return to top"><img src="images/icon_up.svg" id="arrow" alt="Up Arrow"><p>Back to Top</p></button>
-	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Sticky back to top button -->
+	<button onclick="topFunction()" id="following_button" title="Return to top"><img src="images/icon_up.svg" alt="Up Arrow"></button>
+	<script src="js/script.js"></script>
+	<!-- Footer containing attribution link & copyright statement -->
 	<div class="footer">
 		<div class="attribution">
 			<img src="images/icon_cc.jpg" id="cc" alt="Creative Commons Logo">
 			<div class="f-left">
 				<h3 class="regular">This website contains material produced by others which requires attribution.</h3>
-				<h3><a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page6.html" id="credits">Click here ⇗</a> to view the attributions.</h3>
+				<h3><a href="page6.html" id="credits">Click here ⇗</a> to view the site attributions.</h3>
 			</div>
-			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/icon_up.svg" id="arrow" alt="Up Arrow"><p>Back to Top</p></button>
+			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/icon_up.svg" alt="Up Arrow"></button>
 		</div>
-		<div  id="copyright">
+		<div id="copyright">
 			<h3><b>© 2026 Tawa College</b> • All Rights Reserved</h3>
 			<h3 class="regular">Website by Jethro Betita</h3>
 		</div>
@@ -145,5 +155,3 @@
 		</div>
 	</div>
 </html>
-
-

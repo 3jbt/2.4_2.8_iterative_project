@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
+		<!-- Metadata of the Website for Search Engines -->
 		<title>Tawa College EOTC 2026</title>
 		<meta charset="utf-8">
 		<meta name="Keywords" content="activities, information, tawa college, 2026, eotc">
@@ -9,6 +10,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<link rel="stylesheet" href="css/style.css">
+		
+		<!-- Favicon Code so site is distinguishable amongst other tabs -->
 		<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
 		<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
 		<link rel="shortcut icon" href="images/favicon.ico">
@@ -21,28 +24,30 @@
 			<img src="images/tawa_shield.png" alt="Tawa College Shield">
 			<div class="wrap">
 				<h1>Tawa College</h1>
-				<h1 class="bold">EOTC 2026</h1>
+				<h1><b>EOTC 2026</b></h1>
 			</div>
 		</div>
 		<div class="links">
-			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/index.html" id="current"><h1 id="bold">Home</h1></a>
-			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/contact.html"><h1>Contact</h1></a>
+			<a href="index.html" class="current"><h1>Home</h1></a>
+			<a href="page5.html"><h1>Contact</h1></a>
 		</div>
 	</div>
+	<!-- Sticky Navbar -->
 	<div class="persistent" id="persistent">
-		<div id="toggle" class="" onclick="menutoggle()">
+		<div id="toggle" onclick="menutoggle()">
 			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html"><h2>Community Service</h2></a>
+		<a href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a href="page3.html"><h2>Camp Wainui</h2></a>
+		<a href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a href="page4.html"><h2>Community Service</h2></a>
 	</div>
+	<!-- Overlay which displays if a screen is too small for content to display reasonably -->
 	<div id="insufficient">
-		<img src="https://projectspace.nz/kyustlyz/12DIT/KCC/images/file-circle-xmark-solid.png" width=10% alt="Cannot display page.">
+		<img src="images/file-circle-xmark-solid.png" alt="Cannot display page.">
 		<p>This screen is too small to display this website.</p>
 		<p>Please switch to landscape view, or a capable device.</p>
 		<p>Free to use computers are available at libraries near you.</p>
@@ -53,11 +58,12 @@
 		<div class="full-width-2">
 			<h1 class="white">Learn more about the 2026 Activities!</h1>
 		</div>
-		<a id="adrenalin" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a id="mountainw" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a id="community" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html"><h2>Community Service</h2></a>
-		<a id="campwainu" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
+		<a class="adrenalin" href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a class="mountainw" href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a class="community" href="page4.html"><h2>Community Service</h2></a>
+		<a class="campwainu" href="page3.html"><h2>Camp Wainui</h2></a>
 	</div>
+	<!-- Dropdown menu triggered by hamburger menu icon in the navbar -->
 	<div class="activity-menu" id="menu" style="top: -1000px; position: fixed;">
 		<div class="full-width-2" id="banner">
 			<img src="images/tawa_shield.png" id="shield" alt="Tawa College Shield">
@@ -65,18 +71,21 @@
 				<h1 class="white" id="main">Tawa College</h1>
 				<h1 class="bold">EOTC 2026</h1>
 			</div>
-			<div class="links" id="blinks">
-				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/index.html" id="current"><h1 id="bold">Home</h1></a>
-				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/contact.html" id="no-image"><h1>Contact</h1></a>
+			<div class="links">
+				<a href="index.html" class="current"><h1>Home</h1></a>
+				<a href="page5.html"><h1>Contact</h1></a>
 			</div>
 		</div>
-		<a id="adrenalin" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a id="mountainw" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a id="community" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html"><h2>Community Service</h2></a>
-		<a id="campwainu" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
+		<a class="adrenalin" href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a class="mountainw" href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a class="community" href="page4.html"><h2>Community Service</h2></a>
+		<a class="campwainu" href="page3.html"><h2>Camp Wainui</h2></a>
 	</div>
+	<!-- Partially transparent overlay when the dropdown menu is opened.
+	This prevents the user from interacting with other page elements while it is open-->
 	<div id="obscure">
 	</div>
+	<!-- Main page content -->
 	<div class="content">
 		<div class="full-width-2" id="important">
 			<h2 class="white" id="bold">All students must have their <a href="" id="high_contrast">permission form ⇗</a> signed & completed in order to participate.</h2>
@@ -89,15 +98,14 @@
 		</div>
 		<div class="flex-horizontal">
 			<div class="text-area">
-				<p>In the Year 10 EOTC Programme, students partake in 4 action-packed days with various activities. The focus of this programme is about citizenship & social awareness of the students.</p>
-				<p>EOTC takes place from Tuesday 3 December to Friday 6 December.
-	All activities commence at Tawa College past 8AM and return to school grounds by 3:20PM. Starting times vary by activity - see the activity pages.</p>
+				<p>In the Year 10 EOTC Programme, students partake in 5 action-packed days with various activities. The focus of this programme is about citizenship & social awareness of the students.</p>
+				<p>EOTC takes place from Monday 7 December to Friday 11 December. All activities commence past 8AM and return to school grounds by 3:20PM. Starting times & locations vary by activity - see the activity pages, or <a href="#timetables">view the activity timetable below.</a></p>
 				<div class="mobile_image">
 					<img src="images/activities/community_2.jpg" alt="Community Service Image">
 					<p class="BL">Community Service</p>
 				</div>
-				<p>It is expected that students will wear clothes suitable for movement for all activities. As activities will last for a whole school day, it's a good idea to bring lunch as usual for the activities.</p>
-				<p>Packing requirements will vary by activity. Specific packing lists can be found at the top of each activity page, and a full packing list can be <a href="#packing">found below. ⇓</a> If there are any difficulties supplying these required items, please contact us so we can discuss a suitable solution.</p>
+				<p>It is expected that students will wear clothes suitable for movement for all activities. Additionally, students must bring their lunch as usual to these activities, as they will last for a whole school day.</p>
+				<p>Packing requirements will vary by activity. Specific packing lists can be found at the top of each activity page, and a full packing list can be <a href="#packing">found below. ⇓</a> If there are any difficulties supplying these required items, please <a href="page5.html">contact us</a> so we can discuss a solution that works for you.</p>
 			</div>
 			<div class="gallery">
 				<div class="image">
@@ -107,30 +115,35 @@
 			</div>
 		</div>
 		<div>
-			<h1 class="center">Activity Timetables (House Groups)</h1>
+		<h1 class="center">Activity Timetables (House Groups)</h1>
 		</div>
 		<div class="timetables" id="timetables">
 			<div id="rangituhi" class="colours">
 				<h2>Rangituhi</h2>
 				<div class="sequence">
 					<div>
-						<p class="underline">4 December</p>
-						<p>8:30am @ Mauri Tau</p>
-						<p>Rangituhi Walk</p>
-					</div>
-					<div>
-						<p class="underline">5 December</p>
-						<p>8:30am @ Mauri Tau</p>
-						<p>Community Service</p>
-					</div>
-					<div>
-						<p class="underline">6 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>7 December</u></p>
+						<p>8:00am @ Mauri Tau</p>
 						<p>Camp Wainui (Day 1)</p>
 					</div>
 					<div>
-						<p class="underline">7 December</p>
+						<p><u>8 December</u></p>
 						<p>Camp Wainui (Day 2)</p>
+					</div>
+					<div>
+						<p><u>9 December</u></p>
+						<p>8:40am @ Mauri Tau</p>
+						<p>Rangituhi Walk</p>
+					</div>
+					<div>
+						<p><u>10 December</u></p>
+						<p>8:20am @ Mauri Tau</p>
+						<p>Adrenalin Forest & Pool</p>
+					</div>
+					<div>
+						<p><u>11 December</u></p>
+						<p>8:30am @ School Gyms</p>
+						<p>Community Service</p>
 					</div>
 				</div>
 			</div>
@@ -138,23 +151,28 @@
 				<h2>Whitireia</h2>
 				<div class="sequence">
 					<div>
-						<p class="underline">4 December</p>
-						<p>8:30am @ Mauri Tau</p>
-						<p>Rangituhi Walk</p>
-					</div>
-					<div>
-						<p class="underline">5 December</p>
-						<p>8:30am @ Mauri Tau</p>
-						<p>Community Service</p>
-					</div>
-					<div>
-						<p class="underline">6 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>7 December</u></p>
+						<p>8:00am @ Mauri Tau</p>
 						<p>Camp Wainui (Day 1)</p>
 					</div>
 					<div>
-						<p class="underline">7 December</p>
+						<p><u>8 December</u></p>
 						<p>Camp Wainui (Day 2)</p>
+					</div>
+					<div>
+						<p><u>9 December</u></p>
+						<p>8:20am @ Mauri Tau</p>
+						<p>Adrenalin Forest & Pool</p>
+					</div>
+					<div>
+						<p><u>10 December</u></p>
+						<p>8:40am @ Mauri Tau</p>
+						<p>Rangituhi Walk</p>
+					</div>
+					<div>
+						<p><u>11 December</u></p>
+						<p>8:30am @ School Gyms</p>
+						<p>Community Service</p>
 					</div>
 				</div>
 			</div>
@@ -162,22 +180,27 @@
 				<h2>Raukawa</h2>
 				<div class="sequence">
 					<div>
-						<p class="underline">4 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>7 December</u></p>
+						<p>8:40am @ Mauri Tau</p>
 						<p>Rangituhi Walk</p>
 					</div>
 					<div>
-						<p class="underline">5 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>8 December</u></p>
+						<p>8:20am @ Mauri Tau</p>
+						<p>Adrenalin Forest & Pool</p>
+					</div>
+					<div>
+						<p><u>9 December</u></p>
+						<p>8:30am @ School Gyms</p>
 						<p>Community Service</p>
 					</div>
 					<div>
-						<p class="underline">6 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>10 December</u></p>
+						<p>8:00am @ Mauri Tau</p>
 						<p>Camp Wainui (Day 1)</p>
 					</div>
 					<div>
-						<p class="underline">7 December</p>
+						<p><u>11 December</u></p>
 						<p>Camp Wainui (Day 2)</p>
 					</div>
 				</div>
@@ -186,22 +209,27 @@
 				<h2>Parirua</h2>
 				<div class="sequence">
 					<div>
-						<p class="underline">4 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>7 December</u></p>
+						<p>8:20am @ Mauri Tau</p>
+						<p>Adrenalin Forest & Pool</p>
+					</div>
+					<div>
+						<p><u>8 December</u></p>
+						<p>8:40am @ Mauri Tau</p>
 						<p>Rangituhi Walk</p>
 					</div>
 					<div>
-						<p class="underline">5 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>9 December</u></p>
+						<p>8:30am @ School Gyms</p>
 						<p>Community Service</p>
 					</div>
 					<div>
-						<p class="underline">6 December</p>
-						<p>8:30am @ Mauri Tau</p>
+						<p><u>10 December</u></p>
+						<p>8:00am @ Mauri Tau</p>
 						<p>Camp Wainui (Day 1)</p>
 					</div>
 					<div>
-						<p class="underline">7 December</p>
+						<p><u>11 December</u></p>
 						<p>Camp Wainui (Day 2)</p>
 					</div>
 				</div>
@@ -238,6 +266,7 @@
 					<p>Students will be sleeping in tents with their friends at Camp Wainui.</p>
 					<p>If your family can provide a tent, please let their Mauri Tau teacher know.</p>
 				</div>
+				<!-- Image that only shows on mobile -->
 				<div class="mobile_image">
 					<img src="images/activities/wainui_1.jpg" alt="Camp Wainui Image">
 					<p class="BL">Camp Wainui</p>
@@ -245,7 +274,7 @@
 				<hr class="hide_on_mobile">
 				<div>
 					<h2 id="payment">Payment Information</h2>
-					<p>There is a $90 fee for participating in the EOTC Programme. This is all-inclusive of transport, private hiring of venues, et cetera. It can be paid to the school bank account (12-XXXXXX-XXXXX-XX) or in person at the school office.</p>
+					<p>There is a $90 fee for participating in the EOTC Programme. This is all-inclusive of transport, private hiring of venues, et cetera. It can be paid to the school bank account (Tawa College Board: 12-3192-0011938-00) or in person at the school office.</p>
 					<p>If you may have any difficulties with this payment, don’t hesitate to reach out so that we can figure out a solution that fits your needs.</p>
 				</div>
 				<hr class="hide_on_mobile">
@@ -279,17 +308,18 @@
 			</div>
 		</div>
 	</div>
-	<p></p>
-	<button onclick="topFunction()" id="myBtn" title="Return to top"><img src="images/icon_up.svg" id="arrow" alt="Arrow"><p>Back to Top</p></button>
-	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Sticky back to top button -->
+	<button onclick="topFunction()" id="following_button" title="Return to top"><img src="images/icon_up.svg" alt="Up Arrow"></button>
+	<script src="js/script.js"></script>
+	<!-- Footer containing attribution link & copyright statement -->
 	<div class="footer">
 		<div class="attribution">
 			<img src="images/icon_cc.jpg" id="cc" alt="Creative Commons Logo">
 			<div class="f-left">
 				<h3 class="regular">This website contains material produced by others which requires attribution.</h3>
-				<h3><a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page6.html" id="credits">Click here ⇗</a> to view the site attributions.</h3>
+				<h3><a href="page6.html" id="credits">Click here ⇗</a> to view the site attributions.</h3>
 			</div>
-			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/icon_up.svg" id="arrow"><p>Back to Top</p></button>
+			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/icon_up.svg" alt="Up Arrow"></button>
 		</div>
 		<div id="copyright">
 			<h3><b>© 2026 Tawa College</b> • All Rights Reserved</h3>

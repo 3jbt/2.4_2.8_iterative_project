@@ -1,7 +1,8 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
+// Get the following back to top button & the hamburger menu icon:
+let mybutton = document.getElementById("following_button");
 let toggle = document.getElementById("toggle");
 
+// Check whether the viewing device is in portrait or landscape:
 if(window.innerHeight > window.innerWidth){
     var portraitness = 1;
 	console.log("Portrait");
@@ -10,15 +11,16 @@ if(window.innerHeight > window.innerWidth){
 	console.log("Landscape");
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (portraitness == 0) {
+		// User is on landscape & scrolls 400px: show button & hamburger menu
 		if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
 			mybutton.style.opacity = "100";
 			toggle.style.display = "block";
 		} else {
+		// Landscape & not scrolled 400px: hide button & hamburger menu
 			mybutton.style.opacity = "0";
 			toggle.style.display = "none";
 		}
@@ -29,20 +31,23 @@ function scrollFunction() {
 	
 	if (portraitness == 1) {
 		if (document.body.scrollTop > 30|| document.documentElement.scrollTop > 30) {
+		// User is in portrait mode & scrolls 30 px: show the back to top button & hamburger menu
 			mybutton.style.opacity = "100";
 			toggle.style.display = "block";
 		} else {
+		// User is in portrait mode and has not scrolled 30px: hide button & hamburger menu
 			mybutton.style.opacity = "0";
 			toggle.style.display = "none";
 		}
 	}
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Return the user to the top of the page, scrolling smooothly.
 function topFunction() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+// Code for toggling the dropdown menu.
 function menutoggle() {
 	var menu = document.getElementById("menu");
 	var bars = document.getElementById("toggle");
@@ -54,9 +59,9 @@ function menutoggle() {
 			// If scrolled more than 400px
 			bars.classList.toggle("open");
 			menu.style.position = "fixed";	
-			if (menu.style.top != "50px") {
+			if (menu.style.top != "80px") {
 				console.log("open menu");
-				menu.style.top = "50px";
+				menu.style.top = "80px";
 				overlay.style.display = "block";
 				document.body.style.overflow = "hidden";
 			} else {

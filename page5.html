@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
+		<!-- Metadata of the Website for Search Engines -->
 		<title>Tawa College EOTC 2026</title>
 		<meta charset="utf-8">
 		<meta name="Keywords" content="activities, information, tawa college, 2026, eotc">
 		<meta name="Author" content="Jethro B">
 		<meta name="Description" content="Tawa College EOTC 2026">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
+
+		<!-- Favicon Code so site is distinguishable amongst other tabs -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
 		<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg">
@@ -21,34 +23,37 @@
 			<img src="images/tawa_shield.png" alt="Tawa College Shield">
 			<div class="wrap">
 				<h1>Tawa College</h1>
-				<h1 class="bold">EOTC 2026</h1>
+				<h1><b>EOTC 2026</b></h1>
 			</div>
 		</div>
 		<div class="links">
-			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/index.html"><h1>Home</h1></a>
-			<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/contact.html" id="current"><h1 id="bold">Contact</h1></a>
+			<a href="index.html"><h1>Home</h1></a>
+			<a href="page5.html" class="current"><h1>Contact</h1></a>
 		</div>
 	</div>
+	<!-- Sticky Navbar -->
 	<div class="persistent" id="persistent">
-		<div id="toggle" class="" onclick="menutoggle()">
+		<div id="toggle" onclick="menutoggle()">
 			<span></span>
 			<span></span>
 			<span></span>
 			<span></span>
 		</div>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html"><h2>Community Service</h2></a>
+		<a href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a href="page3.html"><h2>Camp Wainui</h2></a>
+		<a href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a href="page4.html"><h2>Community Service</h2></a>
 	</div>
+	<!-- Overlay which displays if a screen is too small for content to display reasonably -->
 	<div id="insufficient">
-		<img src="https://projectspace.nz/kyustlyz/12DIT/KCC/images/file-circle-xmark-solid.png" width=10%>
+		<img src="images/file-circle-xmark-solid.png" alt="Cannot display page.">
 		<p>This screen is too small to display this website.</p>
 		<p>Please switch to landscape view, or a capable device.</p>
 		<p>Free to use computers are available at libraries near you.</p>
 		<p><a href="https://www.google.com/maps/search/library/">Find a library.</a> (Google Maps)</p>
 		<p onclick="history.back()" id="underline">&#9166; Back</p>
 	</div>
+	<!-- Dropdown menu triggered by hamburger menu icon in the navbar -->
 	<div class="activity-menu" id="menu" style="top: -1000px; position: fixed;">
 		<div class="full-width-2" id="banner">
 			<img src="images/tawa_shield.png" id="shield" alt="Tawa College Shield">
@@ -56,19 +61,22 @@
 				<h1 class="white" id="main">Tawa College</h1>
 				<h1 class="bold">EOTC 2026</h1>
 			</div>
-			<div class="links" id="blinks">
-				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/index.html" id="no-image"><h1>Home</h1></a>
-				<a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/contact.html" id="no-image"><h1>Contact</h1></a>
+			<div class="links">
+				<a href="index.html"><h1>Home</h1></a>
+				<a href="page5.html" class="current"><h1>Contact</h1></a>
 			</div>
 		</div>
-		<a id="adrenalin" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page1.html"><h2>Adrenalin Forest & Pool</h2></a>
-		<a id="mountainw" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page2.html"><h2>Rangituhi Walk</h2></a>
-		<a id="community" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page4.html"><h2>Community Service</h2></a>
-		<a id="campwainu" href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page3.html"><h2>Camp Wainui</h2></a>
+		<a class="adrenalin" href="page1.html"><h2>Adrenalin Forest & Pool</h2></a>
+		<a class="mountainw" href="page2.html"><h2>Rangituhi Walk</h2></a>
+		<a class="community" href="page4.html"><h2>Community Service</h2></a>
+		<a class="campwainu" href="page3.html"><h2>Camp Wainui</h2></a>
 	</div>
+	<!-- Partially transparent overlay when the dropdown menu is opened.
+	This prevents the user from interacting with other page elements while it is open-->
 	<div id="obscure">
 	</div>
-	<div class="thumbnail" grid-template-rows="auto" id="contact">
+	<!-- Main page content -->
+	<div class="thumbnail" id="community-service-jpg">
 		<div class="full-width-2">
 			<h1 class="bold">Contact Us</h1>
 		</div>
@@ -79,8 +87,8 @@
 				<p>We acknowledge that everybody's situation is unique. If you require any flexibility, whether that be regarding payment, attendance, transport or care during the activities, we're more than happy to have a chat with you.</p>
 				<p>The EOTC Co-Ordinator should be your first point of contact.</p>
 				<div class="full-width-2" id="flex-vertical">
-					<div class="flex-horizontal" id="contact_grid">
-						<div class="gallery" id="width_auto">
+					<div class="flex-horizontal">
+						<div class="gallery">
 							<img src="images/icon_phone.svg" alt="Phone Icon">
 						</div>
 						<div class="text-area">
@@ -88,8 +96,8 @@
 							<p>School Office <i>(Ask for Ria Edmonds)</i></p>
 						</div>
 					</div>
-					<div class="flex-horizontal" id="contact_grid">
-						<div class="gallery" id="width_auto">
+					<div class="flex-horizontal">
+						<div class="gallery">
 							<img src="images/icon_email.svg" alt="Email Icon">
 						</div>
 						<div class="text-area">
@@ -97,8 +105,8 @@
 							<p>Ria Edmonds <i>(EOTC Co-Ordinator)</i></p>
 						</div>
 					</div>
-					<div class="flex-horizontal" id="contact_grid">
-						<div class="gallery" id="width_auto">
+					<div class="flex-horizontal">
+						<div class="gallery">
 							<img src="images/icon_email.svg" alt="Email Icon">
 						</div>
 						<div class="text-area">
@@ -122,17 +130,18 @@
 			</div>
 		</div>
 	</div>
-	<p></p>
-	<button onclick="topFunction()" id="myBtn" title="Return to top"><img src="images/icon_up.svg" id="arrow" alt="Up Arrow"><p>Back to Top</p></button>
-	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Sticky back to top button -->
+	<button onclick="topFunction()" id="following_button" title="Return to top"><img src="images/icon_up.svg" alt="Up Arrow"></button>
+	<script src="js/script.js"></script>
+	<!-- Footer containing attribution link & copyright statement -->
 	<div class="footer">
 		<div class="attribution">
 			<img src="images/icon_cc.jpg" id="cc" alt="Creative Commons Logo">
 			<div class="f-left">
 				<h3 class="regular">This website contains material produced by others which requires attribution.</h3>
-				<h3><a href="https://projectspace.nz/kyustlyz/12DIT/2.4_2.8_iterative_website/stage_3_images_and_graphics/page6.html" id="credits">Click here ⇗</a> to view the attributions.</h3>
+				<h3><a href="page6.html" id="credits">Click here ⇗</a> to view the site attributions.</h3>
 			</div>
-			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/icon_up.svg" id="arrow" alt="Up Arrow"><p>Back to Top</p></button>
+			<button onclick="topFunction()" id="stayBtn" title="Return to top"><img src="images/icon_up.svg" alt="Up Arrow"></button>
 		</div>
 		<div id="copyright">
 			<h3><b>© 2026 Tawa College</b> • All Rights Reserved</h3>
