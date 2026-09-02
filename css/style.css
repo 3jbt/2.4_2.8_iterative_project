@@ -1130,7 +1130,7 @@ button img {
 		width: 90vh;
 	}
 	
-	.header::before, .full-width-2::before, .gallery .full-width-2::before, .footer::before {
+	.header::before, .full-width-2::before, .gallery .full-width-2::before {
 		width: 250%;
 	}
 	
