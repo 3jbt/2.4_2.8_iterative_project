@@ -1,6 +1,7 @@
 // Get the following back to top button & the hamburger menu icon:
 let mybutton = document.getElementById("following_button");
 let toggle = document.getElementById("toggle");
+let navbar = document.getElementById("persistent");
 
 // Check whether the viewing device is in portrait or landscape:
 if(window.innerHeight > window.innerWidth){
@@ -34,10 +35,12 @@ function scrollFunction() {
 		// User is in portrait mode & scrolls 30 px: show the back to top button & hamburger menu
 			mybutton.style.opacity = "100";
 			toggle.style.display = "block";
+			navbar.style.display = "flex";
 		} else {
 		// User is in portrait mode and has not scrolled 30px: hide button & hamburger menu
 			mybutton.style.opacity = "0";
 			toggle.style.display = "none";
+			navbar.style.display = "none";
 		}
 	}
 }
@@ -52,6 +55,7 @@ function menutoggle() {
 	var menu = document.getElementById("menu");
 	var bars = document.getElementById("toggle");
 	var overlay = document.getElementById("obscure");
+	var persist = document.getElementById("persistent");
 	
 	if (portraitness == 0) {
 		// If in Landscape Mode:
@@ -82,12 +86,16 @@ function menutoggle() {
 			console.log("open menu");
 			menu.style.top = "0px";
 			overlay.style.display = "block";
+			persist.style.backgroundColor = "rgba(0, 0, 0, 0)"
+			bars.style.backgroundColor = "rgba(0, 0, 0, 0)"
 			document.body.style.overflow = "hidden";
 		} else {
 			console.log("close menu");
 			menu.style.top = "-1000px";
 			overlay.style.display = "none";
 			document.body.style.overflow = "";
+			persist.style.backgroundColor = "var(--secondary)"
+			bars.style.backgroundColor = "var(--secondary)"
 		}
 	}
 }
