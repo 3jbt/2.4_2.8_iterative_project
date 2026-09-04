@@ -21,6 +21,7 @@
 	/* Underlines */
 	--black_underline: 2px solid var(--text) underline;
 	--white_underline: 2px solid var(--text_contrast) underline;
+	--hover_underline: 3px solid blue underline;
 }
 
 html {
@@ -144,8 +145,8 @@ h3 {
 }
 
 p a, li a {
-	color: var(--text);
-	text-decoration: 2px dotted underline var(--text);
+	color: blue;
+	text-decoration: 2px dotted underline blue;
 }
 
 .text-contrast, .header h1, .header h2, .footer h3 {
@@ -213,6 +214,20 @@ p, li {
 
 a:hover, .current {
 	background-color: var(--hover);
+}
+
+p a:hover, li a:hover {
+	text-decoration: var(--hover_underline);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#no-hover:hover {
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+#banner:hover {
+	cursor: pointer;
 }
 
 .sequence div p {

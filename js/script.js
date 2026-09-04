@@ -63,14 +63,14 @@ function menutoggle() {
 			// If scrolled more than 400px
 			bars.classList.toggle("open");
 			menu.style.position = "fixed";	
-			if (menu.style.top != "80px") {
+			if (menu.style.top != "4.5vw") {
 				console.log("open menu");
-				menu.style.top = "80px";
+				menu.style.top = "4.5vw";
 				overlay.style.display = "block";
 				document.body.style.overflow = "hidden";
 			} else {
 				console.log("close menu");
-				menu.style.top = "-1000px";
+				menu.style.top = "-66vw";
 				overlay.style.display = "none";
 				document.body.style.overflow = "";
 			}
@@ -91,7 +91,7 @@ function menutoggle() {
 			document.body.style.overflow = "hidden";
 		} else {
 			console.log("close menu");
-			menu.style.top = "-1000px";
+			menu.style.top = "-66vh";
 			overlay.style.display = "none";
 			document.body.style.overflow = "";
 			persist.style.backgroundColor = "var(--secondary)"
@@ -99,3 +99,11 @@ function menutoggle() {
 		}
 	}
 }
+
+document.getElementById('banner').addEventListener('click', function() {
+  window.location.href = 'index.html';
+});
+
+document.getElementById('no-hover').addEventListener('click', function() {
+  window.location.href = 'index.html';
+});
